@@ -1,0 +1,42 @@
+{
+  "name": "DSL::Entity::AddressBook",
+  "description": "Grammars for AddressBook entities: person names, company names, etc.",
+  "version": "0.1.0",
+  "perl": "6.d",
+  "authors": [
+    "Anton Antonov"
+  ],
+  "auth": "zef:antononcube",
+  "depends": [
+    "DSL::Shared:ver<0.1.6+>"
+  ],
+  "build-depends": [],
+  "test-depends": [],
+  "provides": {
+    "DSL::Entity::AddressBook": "lib/DSL/Entity/AddressBook.rakumod",
+    "DSL::Entity::AddressBook::Actions::SQL::Standard": "lib/DSL/Entity/AddressBook/Actions/SQL/Standard.rakumod",
+    "DSL::Entity::AddressBook::Grammar": "lib/DSL/Entity/AddressBook/Grammar.rakumod",
+    "DSL::Entity::AddressBook::Grammar::EntityNames": "lib/DSL/Entity/AddressBook/Grammar/EntityNames.rakumod",
+    "DSL::Entity::AddressBook::ResourceAccess": "lib/DSL/Entity/AddressBook/ResourceAccess.rakumod"
+  },
+  "resources": [
+    "PersonNameToEntityID_EN.tsv",
+    "CompanyNameToEntityID_EN.tsv",
+    "OccupationToEntityID_EN.tsv",
+    "dfAddressBook.tsv"
+  ],
+  "license": "Artistic-2.0",
+  "tags": [
+    "store",
+    "store name",
+    "item",
+    "store item",
+    "inventory",
+    "entity",
+    "parser",
+    "interpreter",
+    "ner"
+  ],
+  "api": "1",
+  "source-url": "https://github.com/antononcube/Raku-DSL-Entity-AddressBook.git"
+}
