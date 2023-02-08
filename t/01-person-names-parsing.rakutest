@@ -1,0 +1,20 @@
+use lib './lib';
+use lib '.';
+use DSL::Entity::AddressBook;
+use Test;
+
+##===========================================================
+## Store items
+##===========================================================
+
+my $pCOMMAND = DSL::Entity::AddressBook::Grammar;
+
+plan 2;
+
+## 1
+ok $pCOMMAND.parse('Orlando Bloom', args => (DSL::Entity::AddressBook::resource-access-object(),)), 'Orlando Bloom';
+
+## 2
+ok $pCOMMAND.parse('Lord of the rings', args => (DSL::Entity::AddressBook::resource-access-object(),)), 'Lord of the rings';
+
+done-testing;
