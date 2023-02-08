@@ -15,7 +15,7 @@ grammar DSL::Entity::AddressBook::Grammar
         does DSL::Shared::Roles::English::PipelineCommand {
 
     # TOP
-    regex TOP($*resObj) {
+    regex TOP($*resourceObj) {
         <pipeline-command> |
         <addressbook-entity-spec-list> |
         <recommend-for-addressbook-command> |
