@@ -35,44 +35,13 @@ my &ab-parse = { DSL::Entity::AddressBook::Grammar.parse($_, args => (DSL::Entit
 
 say &ab-parse('Orlando Bloom');
 ```
-```
-# ｢Orlando Bloom｣
-#  addressbook-entity-spec-list => ｢Orlando Bloom｣
-#   addressbook-entity-spec => ｢Orlando Bloom｣
-#    entity-addressbook-person-name => ｢Orlando Bloom｣
-#     entity-name => ｢Orlando Bloom｣
-#      0 => ｢Orlando Bloom｣
-#       entity-name-part => ｢Orlando｣
-#       entity-name-part => ｢Bloom｣
-```
 
 ```perl6
 say &ab-parse('Lord of the Rings');
 ```
-```
-# ｢Lord of the Rings｣
-#  addressbook-entity-spec-list => ｢Lord of the Rings｣
-#   addressbook-entity-spec => ｢Lord of the Rings｣
-#    entity-addressbook-company-name => ｢Lord of the Rings｣
-#     entity-name => ｢Lord of the Rings｣
-#      0 => ｢Lord of the Rings｣
-#       entity-name-part => ｢Lord｣
-#       entity-name-part => ｢of｣
-#       entity-name-part => ｢the｣
-#       entity-name-part => ｢Rings｣
-```
 
 ```perl6
 say &ab-parse('X-Men');
-```
-```
-# ｢X-Men｣
-#  addressbook-entity-spec-list => ｢X-Men｣
-#   addressbook-entity-spec => ｢X-Men｣
-#    entity-addressbook-company-name => ｢X-Men｣
-#     entity-name => ｢X-Men｣
-#      0 => ｢X-Men｣
-#       entity-name-part => ｢X-Men｣
 ```
 
 ------
