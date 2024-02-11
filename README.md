@@ -47,16 +47,17 @@ say &ab-parse('Orlando Bloom');
 ```
 
 ```perl6
-say &ab-parse('Lord of the Rings');
+say &ab-parse('Lort of the Rings');
 ```
 ```
-# ｢Lord of the Rings｣
-#  addressbook-entity-spec-list => ｢Lord of the Rings｣
-#   addressbook-entity-spec => ｢Lord of the Rings｣
-#    entity-addressbook-company-name => ｢Lord of the Rings｣
-#     entity-name => ｢Lord of the Rings｣
-#      0 => ｢Lord of the Rings｣
-#       entity-name-part => ｢Lord｣
+#ERROR: Possible misspelling of 'lord of the rings' as 'lort of the rings'.
+# ｢Lort of the Rings｣
+#  addressbook-entity-spec-list => ｢Lort of the Rings｣
+#   addressbook-entity-spec => ｢Lort of the Rings｣
+#    entity-addressbook-company-name => ｢Lort of the Rings｣
+#     entity-name => ｢Lort of the Rings｣
+#      0 => ｢Lort of the Rings｣
+#       entity-name-part => ｢Lort｣
 #       entity-name-part => ｢of｣
 #       entity-name-part => ｢the｣
 #       entity-name-part => ｢Rings｣

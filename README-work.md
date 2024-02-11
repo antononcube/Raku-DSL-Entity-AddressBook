@@ -37,7 +37,7 @@ say &ab-parse('Orlando Bloom');
 ```
 
 ```perl6
-say &ab-parse('Lord of the Rings');
+say &ab-parse('Lort of the Rings');
 ```
 
 ```perl6
