@@ -11,7 +11,7 @@ say "Parsing time: { now - $tstart }";
 
 my @testCommands = (
 'Orlando Bloom',
-'Lord of the Rings',
+'Lort of the Rings',
 'LOTR',
 'X-Men'
 );
