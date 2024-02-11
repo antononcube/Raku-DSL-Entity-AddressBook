@@ -1,5 +1,5 @@
-use lib './lib';
-use lib '.';
+use lib <. lib>;
+
 use DSL::Entity::AddressBook;
 use DSL::Entity::AddressBook::Actions::SQL::Standard;
 
@@ -10,7 +10,10 @@ say $pCOMMAND.parse('i want LOTR, X-Men, and Liv Tyler', args => (DSL::Entity::A
 say "Parsing time: { now - $tstart }";
 
 my @testCommands = (
-'Orlando Bloom'
+'Orlando Bloom',
+'Lord of the Rings',
+'LOTR',
+'X-Men'
 );
 
 my @targets = ('SQL-Standard');
